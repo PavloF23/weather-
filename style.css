@@ -1,0 +1,12 @@
+
+.conteiner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 380px;
+    text-align: center;
+}
+
+.list {
+    list-style: none;
+    text-align: left;
+}
