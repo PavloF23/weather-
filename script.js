@@ -1,7 +1,7 @@
 const form = document.querySelector('.js-search');  //посилання на форму
 const list = document.querySelector('.list');  //посилання на місце для відображення погоди
 
-const BASE_URL = 'https://api.weatherapi.com/v1/forecast.json';
+const BASE_URL = 'http://api.weatherapi.com/v1/forecast.json';
 const API_KEY = '6d9e1f9bc39549bdb1b181332221811';
 
 form.addEventListener('submit', onSearch);      //слушатель кнопки пошуку
