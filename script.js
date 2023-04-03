@@ -36,7 +36,7 @@ list.innerHTML = markUp;
 // функція для опроса АПІ сервера
 function forecastApi(name="Kiev", value=7){    
     // повертаєм конструкцію fetch для запиту URL та його опцій, й прийняття ПОМІСУ (?-початок перелику параметрів пошуку,= - значення параметра, & - перелік параметрів)
-   return fetch(`${BASE_URL}?key=${API_KEY}&q=${name}&days=${value}`).then(resp => {
+   return fetch(`${BASE_URL}?key=${API_KEY}&city=${name}`).then(resp => {
 
         //перевірка респонса помилок
         if (!resp.ok){
