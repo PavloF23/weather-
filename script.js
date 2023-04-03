@@ -26,7 +26,7 @@ function creatMarkup(arr) {
     const markUp = arr.map(item => `<li>
     <img src="${item.day.condition.icon}" alt="icon">
     <span>${item.day.condition.text}</span>
-    <h2>День: ${item.date}</h2>
+//     <h2>День: ${item.date}</h2>
     <h3>Температура: ${item.day.avgtemp_c}&#8451;</h3>
 </li>`).join('');
 list.innerHTML = markUp;
@@ -34,7 +34,7 @@ list.innerHTML = markUp;
 
 
 // функція для опроса АПІ сервера
-function forecastApi(name="Kiev", value=7){    
+function forecastApi(name="Kiev"){    
     // повертаєм конструкцію fetch для запиту URL та його опцій, й прийняття ПОМІСУ (?-початок перелику параметрів пошуку,= - значення параметра, & - перелік параметрів)
    return fetch(`${BASE_URL}?key=${API_KEY}&city=${name}`).then(resp => {
 
